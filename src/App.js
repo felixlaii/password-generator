@@ -11,6 +11,14 @@ function App() {
   });
   const [handleText, setHandleText] = useState('');
   const [copied, setCopied] = useState(false);
+
+  const handleChangeUppercase = () => {
+    setPasswordGen({
+      ...passwordGen,
+      uppercase: !passwordGen.uppercase,
+    });
+  };
+
   return (
     <div className="App">
   
