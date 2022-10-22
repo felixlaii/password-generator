@@ -19,6 +19,13 @@ function App() {
     });
   };
 
+  const handleChangeLowercase = () => {
+    setPasswordGen({
+      ...passwordGen,
+      lowercase: !passwordGen.lowercase,
+    });
+  };
+
   return (
     <div className="App">
   
