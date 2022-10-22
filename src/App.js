@@ -9,6 +9,8 @@ function App() {
     numbers: false,
     symbols: false,
   });
+  const [handleText, setHandleText] = useState('');
+  const [copied, setCopied] = useState(false);
   return (
     <div className="App">
   
