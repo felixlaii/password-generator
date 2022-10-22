@@ -26,6 +26,12 @@ function App() {
     });
   };
 
+  const handleChangeNumbers = () => {
+    setPasswordGen({
+      ...passwordGen,
+      numbers: !passwordGen.numbers,
+    });
+  };
   return (
     <div className="App">
   
