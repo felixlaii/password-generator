@@ -116,6 +116,15 @@ function App() {
           <div>
             <label>Password length</label>
           </div>
+          <div>
+            <input
+              type="number"
+              min="4"
+              max="20"
+              value={passwordGen.length}
+              onChange={(e) => setPasswordLength(e.target.value)}
+            />
+          </div>
           </div>
       </div>
       </div>
