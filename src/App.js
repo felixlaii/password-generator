@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Checkbox from "./components/Checkbox"
 
 function App() {
   const [passwordGen, setPasswordGen] = useState({
@@ -76,7 +77,7 @@ function App() {
       ];
       const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
       const characters = shuffleArray(availableCharacters).slice(0, length);
-      setHandelText(characters.join(""));
+      setHandleText(characters.join(""));
       return characters;
     };
 
@@ -90,17 +91,17 @@ function App() {
         <div className="password-box">
           <input
             type="text"
-            value={handelText}
+            value={handleText}
             placeholder=""
             autoComplete="off"
-            onChange={(e) => setHandelText(e.target.value)}
+            onChange={(e) => setHandleText(e.target.value)}
           />
 
           <button
             className="copy-button"
             onClick={() => {
-              if (handelText.length > 0) {
-                navigator.clipboard.writeText(handelText);
+              if (handleText.length > 0) {
+                navigator.clipboard.writeText(handleText);
                 setCopied(true);
                 setInterval(() => {
                   setCopied(false);
