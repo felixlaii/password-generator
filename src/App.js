@@ -32,6 +32,13 @@ function App() {
       numbers: !passwordGen.numbers,
     });
   };
+
+  const handleChangeSymbols = () => {
+    setPasswordGen({
+      ...passwordGen,
+      symbols: !passwordGen.symbols,
+    });
+  };
   return (
     <div className="App">
   
