@@ -126,6 +126,17 @@ function App() {
             />
           </div>
           </div>
+          <div className="word-crieteria__box">
+          <div>
+            <label>Include uppercase letters</label>
+          </div>
+          <div>
+            <Checkbox
+              value={passwordGen.uppercase}
+              onChange={handleChangeUppercase}
+            />
+          </div>
+        </div>
       </div>
       </div>
   
