@@ -111,6 +111,12 @@ function App() {
           >
             {copied ? 'Copied!' : 'Copy text'}
           </button>
+          <br />
+          <div className="word-crieteria__box">
+          <div>
+            <label>Password length</label>
+          </div>
+          </div>
       </div>
       </div>
   
