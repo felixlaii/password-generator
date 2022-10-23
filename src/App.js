@@ -47,6 +47,43 @@ function App() {
     });
   };
 
+
+  function generatePassword() {
+    const numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+    const symbolsArray = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')'];
+
+    const characterCodes = Array.from(Array(26)).map((_e, i) => i + 97);
+    const lowerCaseLetters = characterCodes.map((code) =>
+      String.fromCharCode(code)
+    );
+    const upperCaseLetters = lowerCaseLetters.map((letter) =>
+      letter.toUpperCase()
+    );
+
+    const { length, uppercase, lowercase, numbers, symbols } = passwordGen;
+
+    const generateTheWord = (
+      length,
+      uppercase,
+      lowercase,
+      numbers,
+      symbols
+    ) => {
+      const availableCharacters = [
+        ...(lowercase ? lowerCaseLetters : []),
+        ...(uppercase ? upperCaseLetters : []),
+        ...(numbers ? numbersArray : []),
+        ...(symbols ? symbolsArray : []),
+      ];
+      const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
+      const characters = shuffleArray(availableCharacters).slice(0, length);
+      setHandelText(characters.join(''));
+      return characters;
+    };
+
+    generateTheWord(length, uppercase, lowercase, numbers, symbols);
+  }
+
   return (
     <div className="App">
   
