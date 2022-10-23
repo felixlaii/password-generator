@@ -148,6 +148,17 @@ function App() {
             />
           </div>
         </div>
+        <div className="word-crieteria__box">
+          <div>
+            <label>Include numbers</label>
+          </div>
+          <div>
+            <Checkbox
+              value={passwordGen.numbers}
+              onChange={handleChangeNumbers}
+            />
+          </div>
+        </div>
       </div>
       </div>
   
