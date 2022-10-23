@@ -1,40 +1,40 @@
-body {
+/* body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} */
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-.wrapper {
+/* } */
+/* .wrapper {
   background-color: #201f1f;
   height: 100vh;
   display: flex;
   align-items: center;
-}
+} */ 
 
-.container {
+/* .container {
   background-color: #ffffff;
   width: 400px;
   max-width: 100%;
   margin: 0 auto;
-}
-
+} */
+/* 
 .wrapper-box {
   padding: 30px;
-}
+} */
 
-.word-criteria__box {
+/* .word-criteria__box {
   display: flex;
   justify-content: space-between;
   padding: 10px 0px;
-}
+} */
 
-.generate-button {
+/* .generate-button {
   margin-top: 30px;
   width: 100%;
   height: 50px;
@@ -44,8 +44,8 @@ code {
   background-color: grey;
   font-size: 16px;
   font-weight: bolder;
-}
-
+} */
+/* 
 .password-box > input[type="text"] {
   width: 70%;
   height: 35px;
@@ -54,9 +54,9 @@ code {
   padding-left: 10px;
   color: #000;
   letter-spacing: 2px;
-}
+} */
 
-button.copy-button {
+/* button.copy-button {
   width: 5.5vw;
   height: 3vh;
   cursor: pointer;
@@ -65,19 +65,19 @@ button.copy-button {
   font-weight: bolder;
   border-radius: 5px;
   background-color: grey;
-}
+} */
 
-.word-criteria__box input[type="checkbox"] {
+/* .word-criteria__box input[type="checkbox"] {
   width: 20px;
   height: 20px;
   color: black;
-}
-
+} */
+/* 
 .word-criteria__box label {
   font-weight: 500;
-}
+} */
 
-input[type="number"] {
+/* input[type="number"] {
   width: 23px;
   height: 20px;
-}
+} */

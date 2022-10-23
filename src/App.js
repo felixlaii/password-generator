@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Checkbox from "./components/Checkbox"
+import "./app.scss"
 
 function App() {
   const [passwordGen, setPasswordGen] = useState({
@@ -85,11 +86,14 @@ function App() {
   }
 
   return (
-    <div className="wrapper">
-      <div className="container wrapper-box">
+    <div className="password-generator">
+    <div className="password-generator__wrapper">
+      <div className="password-generator__containerbox">
         <h2>Password Generator</h2>
-        <div className="password-box">
+        <div className="password-generator__passwordbox">
           <input
+                        className="password-generator__input"
+
             type="text"
             value={handleText}
             placeholder=""
@@ -98,7 +102,7 @@ function App() {
           />
 
           <button
-            className="copy-button"
+            className="password-generator__copy"
             onClick={() => {
               if (handleText.length > 0) {
                 navigator.clipboard.writeText(handleText);
@@ -112,12 +116,13 @@ function App() {
             {copied ? "Copied!" : "Copy text"}
           </button>
           <br />
-          <div className="word-criteria__box">
+          <div className="password-generator__wordcriteria">
             <div>
               <label>Password length</label>
             </div>
             <div>
               <input
+              className="password-generator__input"
                 type="number"
                 min="4"
                 max="20"
@@ -126,7 +131,7 @@ function App() {
               />
             </div>
           </div>
-          <div className="word-criteria__box">
+          <div className="password-generator__wordcriteria">
             <div>
               <label>Include uppercase letters</label>
             </div>
@@ -137,7 +142,7 @@ function App() {
               />
             </div>
           </div>
-          <div className="word-criteria__box">
+          <div className="password-generator__wordcriteria">
             <div>
               <label>Include lowercase letters</label>
             </div>
@@ -148,7 +153,7 @@ function App() {
               />
             </div>
           </div>
-          <div className="word-criteria__box">
+          <div className="password-generator__wordcriteria">
             <div>
               <label>Include numbers</label>
             </div>
@@ -159,7 +164,7 @@ function App() {
               />
             </div>
           </div>
-          <div className="word-criteria__box">
+          <div className="password-generator__wordcriteria">
             <div>
               <label>Include symbols</label>
             </div>
@@ -171,12 +176,13 @@ function App() {
             </div>
           </div>
           <div>
-            <button className="generate-button" onClick={generatePassword}>
+            <button className="password-generator-generate" onClick={generatePassword}>
               Generate password
             </button>
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
