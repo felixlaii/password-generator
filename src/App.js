@@ -85,7 +85,11 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="wrapper">
+      <div className="container wrapper-box">
+      <h2>Password Generator</h2>
+
+      </div>
   
     </div>
   );
