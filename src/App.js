@@ -39,6 +39,14 @@ function App() {
       symbols: !passwordGen.symbols,
     });
   };
+
+  const setPasswordLength = (val) => {
+    setPasswordGen({
+      ...passwordGen,
+      length: val,
+    });
+  };
+
   return (
     <div className="App">
   
