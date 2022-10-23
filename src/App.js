@@ -96,6 +96,21 @@ function App() {
             autoComplete="off"
             onChange={(e) => setHandelText(e.target.value)}
           />
+
+<button
+            className="copy-button"
+            onClick={() => {
+              if (handelText.length > 0) {
+                navigator.clipboard.writeText(handelText);
+                setCopied(true);
+                setInterval(() => {
+                  setCopied(false);
+                }, 2000);
+              }
+            }}
+          >
+            {copied ? 'Copied!' : 'Copy text'}
+          </button>
       </div>
       </div>
   
