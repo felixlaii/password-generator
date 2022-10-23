@@ -111,7 +111,7 @@ function App() {
             {copied ? "Copied!" : "Copy text"}
           </button>
           <br />
-          <div className="word-crieteria__box">
+          <div className="word-criteria__box">
             <div>
               <label>Password length</label>
             </div>
@@ -125,7 +125,7 @@ function App() {
               />
             </div>
           </div>
-          <div className="word-crieteria__box">
+          <div className="word-criteria__box">
             <div>
               <label>Include uppercase letters</label>
             </div>
@@ -136,7 +136,7 @@ function App() {
               />
             </div>
           </div>
-          <div className="word-crieteria__box">
+          <div className="word-criteria__box">
             <div>
               <label>Include lowercase letters</label>
             </div>
@@ -147,7 +147,7 @@ function App() {
               />
             </div>
           </div>
-          <div className="word-crieteria__box">
+          <div className="word-criteria__box">
             <div>
               <label>Include numbers</label>
             </div>
@@ -158,7 +158,7 @@ function App() {
               />
             </div>
           </div>
-          <div className="word-crieteria__box">
+          <div className="word-criteria__box">
             <div>
               <label>Include symbols</label>
             </div>
