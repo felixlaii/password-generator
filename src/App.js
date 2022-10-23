@@ -137,6 +137,17 @@ function App() {
             />
           </div>
         </div>
+        <div className="word-crieteria__box">
+          <div>
+            <label>Include lowercase letters</label>
+          </div>
+          <div>
+            <Checkbox
+              value={passwordGen.lowercase}
+              onChange={handleChangeLowercase}
+            />
+          </div>
+        </div>
       </div>
       </div>
   
