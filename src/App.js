@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import Checkbox from "./components/Checkbox"
-import "./app.scss"
+import Checkbox from "./components/Checkbox";
+import "./app.scss";
 
 function App() {
   const [passwordGen, setPasswordGen] = useState({
@@ -87,102 +87,104 @@ function App() {
 
   return (
     <div className="password-generator">
-    <div className="password-generator__wrapper">
-      <div className="password-generator__containerbox">
-        <h2>Password Generator</h2>
-        <div className="password-generator__passwordbox">
-          <input
-                        className="password-generator__input"
-
-            type="text"
-            value={handleText}
-            placeholder=""
-            autoComplete="off"
-            onChange={(e) => setHandleText(e.target.value)}
-          />
-
-          <button
-            className="password-generator__copy"
-            onClick={() => {
-              if (handleText.length > 0) {
-                navigator.clipboard.writeText(handleText);
-                setCopied(true);
-                setInterval(() => {
-                  setCopied(false);
-                }, 2000);
-              }
-            }}
-          >
-            {copied ? "Copied!" : "Copy text"}
-          </button>
-          <br />
-          <div className="password-generator__wordcriteria">
-            <div>
-              <label>Password length</label>
-            </div>
-            <div>
-              <input
+      <div className="password-generator__wrapper">
+        <div className="password-generator__containerbox">
+          <h2>Password Generator</h2>
+          <div className="password-generator__passwordbox">
+            <input
               className="password-generator__input"
-                type="number"
-                min="4"
-                max="20"
-                value={passwordGen.length}
-                onChange={(e) => setPasswordLength(e.target.value)}
-              />
-            </div>
-          </div>
-          <div className="password-generator__wordcriteria">
-            <div>
-              <label>Include uppercase letters</label>
-            </div>
-            <div>
-              <Checkbox
-                value={passwordGen.uppercase}
-                onChange={handleChangeUppercase}
-              />
-            </div>
-          </div>
-          <div className="password-generator__wordcriteria">
-            <div>
-              <label>Include lowercase letters</label>
-            </div>
-            <div>
-              <Checkbox
-                value={passwordGen.lowercase}
-                onChange={handleChangeLowercase}
-              />
-            </div>
-          </div>
-          <div className="password-generator__wordcriteria">
-            <div>
-              <label>Include numbers</label>
-            </div>
-            <div>
-              <Checkbox
-                value={passwordGen.numbers}
-                onChange={handleChangeNumbers}
-              />
-            </div>
-          </div>
-          <div className="password-generator__wordcriteria">
-            <div>
-              <label>Include symbols</label>
-            </div>
-            <div>
-              <Checkbox
-                value={passwordGen.symbols}
-                onChange={handleChangeSymbols}
-              />
-            </div>
-          </div>
-          <div>
-            <button className="password-generator-generate" onClick={generatePassword}>
-              Generate password
+              type="text"
+              value={handleText}
+              placeholder=""
+              autoComplete="off"
+              onChange={(e) => setHandleText(e.target.value)}
+            />
+
+            <button
+              className="password-generator__copy"
+              onClick={() => {
+                if (handleText.length > 0) {
+                  navigator.clipboard.writeText(handleText);
+                  setCopied(true);
+                  setInterval(() => {
+                    setCopied(false);
+                  }, 2000);
+                }
+              }}
+            >
+              {copied ? "Copied!" : "Copy text"}
             </button>
+            <br />
+            <div className="password-generator__wordcriteria">
+              <div>
+                <label>Password length</label>
+              </div>
+              <div>
+                <input
+                  className="password-generator__input"
+                  type="number"
+                  min="4"
+                  max="20"
+                  value={passwordGen.length}
+                  onChange={(e) => setPasswordLength(e.target.value)}
+                />
+              </div>
+            </div>
+            <div className="password-generator__wordcriteria">
+              <div>
+                <label>Include uppercase letters</label>
+              </div>
+              <div>
+                <Checkbox
+                  value={passwordGen.uppercase}
+                  onChange={handleChangeUppercase}
+                />
+              </div>
+            </div>
+            <div className="password-generator__wordcriteria">
+              <div>
+                <label>Include lowercase letters</label>
+              </div>
+              <div>
+                <Checkbox
+                  value={passwordGen.lowercase}
+                  onChange={handleChangeLowercase}
+                />
+              </div>
+            </div>
+            <div className="password-generator__wordcriteria">
+              <div>
+                <label>Include numbers</label>
+              </div>
+              <div>
+                <Checkbox
+                  value={passwordGen.numbers}
+                  onChange={handleChangeNumbers}
+                />
+              </div>
+            </div>
+            <div className="password-generator__wordcriteria">
+              <div>
+                <label>Include symbols</label>
+              </div>
+              <div>
+                <Checkbox
+                  value={passwordGen.symbols}
+                  onChange={handleChangeSymbols}
+                />
+              </div>
+            </div>
+            <div>
+              <button
+                className="password-generator-generate"
+                onClick={generatePassword}
+              >
+                Generate password
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
   );
 }
