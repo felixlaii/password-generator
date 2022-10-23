@@ -88,7 +88,15 @@ function App() {
     <div className="wrapper">
       <div className="container wrapper-box">
       <h2>Password Generator</h2>
-
+      <div className="password-box">
+      <input
+            type="text"
+            value={handelText}
+            placeholder=""
+            autoComplete="off"
+            onChange={(e) => setHandelText(e.target.value)}
+          />
+      </div>
       </div>
   
     </div>
