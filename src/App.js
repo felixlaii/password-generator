@@ -159,6 +159,17 @@ function App() {
             />
           </div>
         </div>
+        <div className="word-crieteria__box">
+          <div>
+            <label>Include symbols</label>
+          </div>
+          <div>
+            <Checkbox
+              value={passwordGen.symbols}
+              onChange={handleChangeSymbols}
+            />
+          </div>
+        </div>
       </div>
       </div>
   
