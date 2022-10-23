@@ -176,7 +176,7 @@ function App() {
             </div>
             <div>
               <button
-                className="password-generator-generate"
+                className="password-generator__generate"
                 onClick={generatePassword}
               >
                 Generate password
