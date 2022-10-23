@@ -170,6 +170,11 @@ function App() {
             />
           </div>
         </div>
+        <div>
+          <button className="generate-button" onClick={generatePassword}>
+            Generate password
+          </button>
+        </div>
       </div>
       </div>
   
