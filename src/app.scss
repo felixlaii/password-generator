@@ -14,8 +14,18 @@ body {
     align-items: center;
   }
 
+  &__title {
+  color: #5c87eb;
+  }
+
+  label {
+    color: #5c87eb;
+
+  }
+
+
   &__containerbox {
-    background-color: #ffffff;
+    background-color: #a7b8e0;
     width: 400px;
     max-width: 100%;
     margin: 0 auto;
@@ -39,9 +49,10 @@ body {
     border: 0px;
     cursor: pointer;
     border-radius: 5px;
-    background-color: grey;
+    background-color: #6278ad;
     font-size: 16px;
     font-weight: bolder;
+    color: #b2c6f5;
   }
 
   &__passwordbox > input[type="text"] {
@@ -50,7 +61,7 @@ body {
     margin-right: 10px;
     font-size: 16px;
     padding-left: 10px;
-    color: #000;
+    color: #5277ce;
     letter-spacing: 2px;
   }
 
@@ -62,13 +73,16 @@ body {
     font-size: 14px;
     font-weight: bolder;
     border-radius: 5px;
-    background-color: grey;
+    background-color: #6278ad;
+    color: #b2c6f5;
+
+    
   }
 
   &__wordcriteria input[type="checkbox"] {
     width: 20px;
     height: 20px;
-    color: black;
+    color: #6278ad;
   }
 
   &__wordcriteria label {

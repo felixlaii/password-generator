@@ -89,7 +89,7 @@ function App() {
     <div className="password-generator">
       <div className="password-generator__wrapper">
         <div className="password-generator__containerbox">
-          <h2>Password Generator</h2>
+          <h2 className="password-generator__title">Password Generator</h2>
           <div className="password-generator__passwordbox">
             <input
               className="password-generator__input"
